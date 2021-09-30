@@ -1,6 +1,6 @@
 {
   "name": "bower-nexus3-resolver",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Bower resolver for integrating the Nexus 3 Repository Manager.",
   "license": "EPL-1.0",
   "keywords": [
@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "q": "~1.5.1",
-    "tar": "~4.4.8",
+    "tar": "~4.4.18",
     "tmp": "~0.0.33"
   },
   "devDependencies": {
