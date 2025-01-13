@@ -56,7 +56,12 @@ module.exports = function resolver(bower) {
       var parsed = self._parseNexusUrl(source);
       var refsUrl = self._buildNexusVersionsEndpoint(parsed);
       return self._downloadString(refsUrl).then(function(data) {
-        return self._processVersions(data);
+        try {
+          const jsonData = JSON.parse(data);
+          return self._processVersions(jsonData);
+        } catch (e){
+          console.error(e)
+        }
       });
     },
 
